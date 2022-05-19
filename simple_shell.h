@@ -3,6 +3,18 @@
 
 #include <stdio.h>
 
+typedef struct data
+{
+	char **av;
+	char *input;
+	char **args;
+	int status;
+	int counter;
+	char **_environ;
+	char *pid;
+} data_shell;
+
+
 int _atoi(char *s);
 int exit_shell(data_shell *datash);
 int _strlen(const char *s);
